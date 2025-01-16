@@ -164,15 +164,19 @@ footer h2{
         width: 350px;
     }
     #jogos {
-        margin-left: 100px;
+        margin-left: 150px;
         max-width: 640px;
-        grid-template-columns: 200px  200px ;
+        grid-template-columns: 200px  ;
         column-gap: 10px;
         
     }
     #produto{
         max-width: 640px;
         width: 600px;
+    }
+    #produto img {
+        width: 300px;
+        
     }
     #produto hr{
         width: 500px;
