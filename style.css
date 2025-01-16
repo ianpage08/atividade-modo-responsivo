@@ -1,1 +1,185 @@
 @charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+header{
+    background-image: linear-gradient(to top,rgb(3, 3, 83), rgb(16, 3, 136));
+}
+
+#conteiner{
+    margin: 0 auto;
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    margin: 0px 10px;
+    list-style-type: none;
+    float: left;
+    color: aliceblue;
+    
+}
+.nav:hover{
+    color: black;
+    background-color: burlywood;
+    padding: 5px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+
+}
+#conteiner h1{
+    margin: 15px 0px;
+    font-style: italic;
+    color: aliceblue;
+}
+
+
+#sobre-a-loja{
+    margin: 0px auto;
+    margin-top: 50px;
+    width: 1024px;
+    display: grid;
+    grid-template-columns:  500px 500px;
+
+}
+#floja{
+    width: 400px;
+}
+
+#sobre h2{
+    padding: 15px 0px;
+    font-weight: bold;
+    font-size: 2em;
+}
+#sobre p{
+    margin-top: 16px;
+    text-indent: 15px;
+    text-align: justify;
+}
+#jogos {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 60px;
+}
+#produto{
+    
+    width: 1024px;
+    margin: 0px auto;
+}
+.produto{
+    padding: 10px;
+    
+    list-style-type: none;
+}
+#produto h2{
+    margin-top: 40px ;
+    padding: 30px 0px;
+    font-style: italic;
+    font-size: 2em;
+}
+#jogos > ul > li >  p{
+    padding: 10px;
+}
+.carrinho{
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: darkgreen;
+    color: aliceblue;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+.carrinho:hover {
+    color: black;
+    background-color: burlywood;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+footer{
+
+    text-align: center;
+    height: 50px;
+    color: aliceblue;
+    background-color: rgb(3, 3, 83);
+}
+footer h2{
+    margin-top: 15px;
+    padding: 10px;
+}
+@media screen and (max-width: 1023px) {
+
+    #conteiner{
+        width: 80%;
+    }
+    #sobre-a-loja{
+        margin-left: 25%;
+        width: 80%;
+        max-width: 1023px;
+        display: grid;
+        grid-template-columns: 500px;
+        
+    }   
+    #floja{
+        width: 500px;
+    } 
+    #jogos {
+        margin-left: 25%;
+        grid-template-columns: 200px  200px ;
+        column-gap: 60px;
+    }
+    #produto{
+        max-width: 1023px;
+        margin: 0px auto;
+        
+    }
+    #produto h2{
+        text-align: center;
+
+    }
+}
+@media screen and (max-width: 640px){
+    #conteiner{
+        max-width: 640px;
+        flex-flow: column;
+        padding: 10px;
+        
+        
+        
+    }
+    #sobre-a-loja{
+        width: 100%;
+        max-width: 640px;
+        grid-template-columns: 350px;
+        
+    }   
+    #floja{
+        width: 350px;
+    }
+    #jogos {
+        margin-left: 100px;
+        max-width: 640px;
+        grid-template-columns: 200px  200px ;
+        column-gap: 10px;
+        
+    }
+    #produto{
+        max-width: 640px;
+        width: 600px;
+    }
+    #produto hr{
+        width: 500px;
+        margin: auto;
+    }
+    
+
+    
+
+}
